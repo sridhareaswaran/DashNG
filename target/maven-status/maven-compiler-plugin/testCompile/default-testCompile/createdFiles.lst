@@ -1,0 +1,9 @@
+org\sri\dashng\DataProviderExample.class
+org\sri\dashng\listener\jsonModel\Info.class
+org\sri\dashng\reporter\CustomReporter.class
+org\sri\dashng\listener\DashNGListener.class
+org\sri\dashng\listener\jsonModel\Skipped.class
+org\sri\dashng\manyTests.class
+org\sri\dashng\listener\jsonModel\resultModel.class
+org\sri\dashng\listener\jsonModel\Passed.class
+org\sri\dashng\listener\jsonModel\Failed.class

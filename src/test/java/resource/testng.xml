@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite
+        name="suite 1"
+        parallel="tests"
+        verbose="1"
+        allow-return-values="false"
+>
+    <listeners>
+        <listener class-name="org.sri.dashng.listener.DashNGListener"/>
+        <listener class-name="org.sri.dashng.reporter.CustomReporter"/>
+    </listeners>
+    <test name="t1" preserve-order="true">
+        <groups>
+            <run>
+                <include name="g1"/>
+                <exclude name="g2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.sri.dashng.manyTests"/>
+        </classes>
+    </test>
+</suite>

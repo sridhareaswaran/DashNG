@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite
-        name="suite 1"
+        name="Some Wonderful name"
         parallel="tests"
         verbose="1"
         allow-return-values="false"
@@ -14,7 +14,10 @@
         <groups>
             <run>
                 <include name="g1"/>
+                <include name="g3"/>
                 <exclude name="g2"/>
+                <exclude name="g4"/>
+                <exclude name="g5"/>
             </run>
         </groups>
         <classes>

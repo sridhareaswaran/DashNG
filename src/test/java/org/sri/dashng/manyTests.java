@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
  */
 public class manyTests {
 
-    @Test(testName = "name is bond",description = "do i need one?",groups = {"g"})
+    @Test(testName = "name is bond",description = "do i need one?",groups = {"g1"})
     public void testMethod1() throws InterruptedException {
         Thread.sleep(10000);
         int x = 3;
@@ -56,9 +56,10 @@ public class manyTests {
     @Test(groups = "g1")
     public void testMethod10() {}
 
-    @Test
+    @Test(groups = "g1")
     public void testMethod11() throws InterruptedException {
         Thread.sleep(1500);
+        throw new SkipException("just skip");
     }
 
     @Test(groups = "g1")

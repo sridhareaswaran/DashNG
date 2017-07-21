@@ -21,7 +21,7 @@ var InprogressGIF = "https://cdn.dribbble.com/users/236204/screenshots/2675071/d
 var CompletedIMG = "https://cdn.dribbble.com/users/59947/screenshots/2853583/2_1x.jpg";
 
 function readJSONfile() {
-    $.getJSON("data/testng.json", function(json) {
+    $.getJSON("data/execution.json", function(json) {
         suiteName = json.info.suiteName;
         startTime = json.info.startTime;
         endTime=json.info.endTime;
@@ -82,7 +82,7 @@ function updateDashboard() {
 
 function main() {
     readJSONfile();
-    setTimeout(main, 1000);
+    setInterval(main, 1000);
 }
 
 main();

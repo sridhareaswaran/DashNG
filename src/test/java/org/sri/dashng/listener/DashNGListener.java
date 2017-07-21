@@ -40,13 +40,13 @@ public class DashNGListener extends TestListenerAdapter {
         ObjectMapper mapper = new ObjectMapper();
         try {
             String jsonInString = mapper.writeValueAsString(r);
-            System.out.println(jsonInString);
+            //System.out.println(jsonInString);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
 
         try {
-            FileWriter fileWriter =new FileWriter("dashboard"+separator+"data"+separator+"dashng.json");
+            FileWriter fileWriter =new FileWriter("dashboard"+separator+"data"+separator+"execution.json");
             fileWriter.write(mapper.writeValueAsString(r));
             fileWriter.flush();
         } catch (IOException e) {

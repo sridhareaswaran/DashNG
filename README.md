@@ -6,4 +6,4 @@ Real time test execution dashboard for testNG
 ![working example](https://github.com/sridhareaswaran/DashNG/blob/master/dashboard/example.gif)
 
 #### todo:
-
+Automatically serve the dashboard with server 
